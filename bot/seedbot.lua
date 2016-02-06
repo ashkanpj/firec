@@ -224,9 +224,7 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-    "admin",
-    "feedback",
-    "echo"
+    "admin"
     },
     sudo_users = {81444630},--Sudo users
     disabled_channels = {},
@@ -301,9 +299,7 @@ Grt a logfile of current group or realm
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
-!fire 
-admin about
-!echo (your text)
+
 **U can use both "/" and "!"
 sudo: @ashi_admin1_kaboos
 ]],
@@ -401,12 +397,9 @@ returns user id
 will return group logs
 
 !banlist
-will return group ban list
-!fire
-!ashi about sudo
-!echo [your text]
-!feedback
+
 **U can use both "/" and "!" 
+
 sudo: @ashi_admin1_kaboos
 ]]
   }
