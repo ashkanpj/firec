@@ -224,31 +224,22 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-    "admin"
+    "admin",
+    "feedback",
+    "echo",
+    "fire"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {81444630},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
+    about_text = [[telefire v3 - Open Source
 An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
+سلام باتشکر از انتخاب خوبتان 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
+@ashi_admin1_kaboos
 
 Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+ashi kaboos
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -306,23 +297,16 @@ Grt a logfile of current group or realm
 
 !broadcast [text]
 !broadcast Hello !
-Send text to all groups
-Only sudo users can run this command
 
 !bc [group_id] [text]
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
-
-**U can use both "/" and "!" 
-
-
-*Only admins and sudo can add bots in group
-
-
-*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only admins and sudo can use res, setowner, commands
+!fire 
+admin about
+!echo (your text)
+**U can use both "/" and "!"
+sudo: @ashi_admin1_kaboos
 ]],
     help_text = [[
 Commands list :
@@ -419,17 +403,12 @@ will return group logs
 
 !banlist
 will return group ban list
-
+!fire
+!ashi about sudo
+!echo [your text]
+!feedback
 **U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
+sudo: @ashi_admin1_kaboos
 ]]
   }
   serialize_to_file(config, './data/config.lua')
