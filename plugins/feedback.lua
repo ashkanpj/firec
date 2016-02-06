@@ -33,8 +33,8 @@ return {
 
   usage = "feedback :نظر خود را ارسال کنید",
   patterns = {
-    "^(feedback) (.*)$",
-    "^(nazar) (.*)$"
+    "^[!/](feedback) (.*)$",
+    "^[!/](nazar) (.*)$"
   },
   run = run
 }
